@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-  <!--================ Hero sm Banner start =================-->      
+  <!--================ Hero sm Banner start =================-->
   <section class="mb-30px">
     <div class="container">
       <div class="hero-banner hero-banner--sm">
@@ -22,7 +22,7 @@
       </div>
     </div>
   </section>
-  <!--================ Hero sm Banner end =================-->    
+  <!--================ Hero sm Banner end =================-->
 
   <!--================ Start Blog Post Area =================-->
   <section class="blog-post-area section-margin">
@@ -31,9 +31,9 @@
         <div class="col-lg-8">
           <div class="main_blog_details">
             {% if post.image_url %}
-              <img class="img-fluid" src="{{ post.image_url }}" alt="">
+              <img class="img-fluid" src="{{ post.image_url }}" alt="user_post_image">
             {% else %}
-              <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="">
+              <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="default_post_image">
             {% endif %}
             <h4>{{ post.title }}</h4>
             <div class="user_details">
@@ -58,7 +58,7 @@
               </div>
             </div>
           </div>
-          
+
 
           <div class="comments-area">
             <h4>{{ comments|length }} Comments</h4>
@@ -75,7 +75,7 @@
                     </div>
                   </div>
                   <div class="reply-btn">
-                          <a href="" class="btn-reply text-uppercase">reply</a> 
+                          <a href="" class="btn-reply text-uppercase">reply</a>
                   </div>
                 </div>
               </div>
@@ -110,4 +110,3 @@
   </section>
   <!--================ End Blog Post Area =================-->
 {% endblock %}
-   
